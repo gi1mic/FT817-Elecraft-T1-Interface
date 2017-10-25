@@ -48,11 +48,11 @@ I just assembled the parts to the rear of the Arduino and then covered in hot gl
 ![alt text](https://github.com/gi1mic/FT817-Elecraft-T1-Interface/blob/master/Photos/interface.jpg "Arduino to T1 interface")
 
 
-The final cable assembly was held in place to the board with hot glue before being wrapped in heat shrink. In hind sight I should have also wired up the RX and TX lines from the ACC port to the Arduino to allow the board to also act as a CAT interface or to read/set options on the FT817 by the Arduino.
+The final cable assembly was held in place to the board with hot glue before being wrapped in heat shrink. In hind sight I should have wired up the RX and TX lines from the ACC port to the Arduino so it could also act as a CAT interface or to read/set options on the FT817.
 
 # Power Consumption
-The documentation for the official interface cable states it draws 0.06 mA with the rig off and 0.3 mA when the rig is on.  This circuit draws about 3mA but bursts to much higher than that every two seconds for a fraction of a second as it samples the BAND_DATA pin. Most of the time the Arduino is in sleep mode.
+The documentation for the official interface cable states it draws 0.06 mA with the rig off and 0.3 mA when the rig is on.  This circuit draws about 3mA but bursts to much higher than that every two seconds for a fraction of a second while it samples the BAND_DATA pin. Most of the time the Arduino is in low power sleep mode.
 
-I suspect the official cable draws so little power that is powered via the TX output pin. Unfortunately, that can’t be down with an Arduino. Still this build is 1/7th the cost of an official cable.
+I suspect the official cable draws so little power that is powered via the TX output pin on the ACC connector. Unfortunately, that can’t be done with an Arduino. Still this build is 1/7th the cost of an official cable.
 
-It is possible to reduce the power consumption of the board a little bit more by removing the power LED and changing the sleep time period in the code. 
+It is possible to reduce the power consumption of the board a little bit more by removing the onoard power LED and increasing the sleep time in the code. 

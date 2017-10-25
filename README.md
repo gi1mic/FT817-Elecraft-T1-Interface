@@ -16,7 +16,7 @@ I used an 5V Arduino Pro Micro since:
 - It has a built in USB port making it easy to program. Just configure the Arduino IDE for a Leonardo board and plug the board in using a USB cable
 - Its ADC covers the required voltage range of the BAND_DATA pin
 - The RAW power input is rated up to 16V so it can be powered directly from the 13.8V output on the ACC connector
-- It has diode protection allowing the board to be power from either the USB port or the RAW input without frying the USB port if the RAW input goes above 5V.
+- It has diode protection allowing the board to be power from either the USB port or the RAW input without frying the USB port if the RAW input goes above 5V. But please physically check your board just in case its a clone and does not include the protection. I take no responsibility  if you fry your USB port!
 - It can be put into sleep mode to reduce power consumption 
 
 # Parts list

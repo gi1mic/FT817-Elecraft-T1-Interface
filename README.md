@@ -1,4 +1,4 @@
-# FT817-Elecraft-T1-Interface by GI1MIC
+# FT817 to Elecraft T1 Interface by GI1MIC
 
 
 A Low cost FT817 to Elecraft T1 ATU cable

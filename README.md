@@ -3,6 +3,7 @@
 
 A Low cost FT817 to Elecraft T1 ATU cable
 
+![alt text](https://github.com/gi1mic/FT817-Elecraft-T1-Interface/blob/master/Photos/IMG_8588.jpg "FT817 to Elecraft T1 ATU cable")
 
 I recently became the proud owner of an Elecraft T1 ATU which I planned to use with my trusty FT817. After reading the manual I was encouraged to get the optional FT817 interface cable until I found out it cost over £70 plus P&P here in the UK.
 
@@ -30,7 +31,7 @@ I used an 5V Arduino Pro Micro since:
 # Assembly
 I just assembled the parts to the rear of the Arduino (See photos).
 
-
+![alt text](https://github.com/gi1mic/FT817-Elecraft-T1-Interface/blob/master/Photos/IMG_8601.jpg "Rear of the board")
 
 |ACC Port | Arduino |
 | ------ | ------ |
@@ -43,6 +44,9 @@ I just assembled the parts to the rear of the Arduino (See photos).
 |TIP           | D9      |
 |RING          | Collector of NPN. Base of NPN goes to Arduino D8 via a 1K resistor |
 |GND           | GND     |  
+
+![alt text](https://github.com/gi1mic/FT817-Elecraft-T1-Interface/blob/master/Photos/interface.jpg "Arduino to T1 interface")
+
 
 The final cable assembly was held in place to the board with hot glue before being wrapped in heat shrink. In hind sight I should have also wired up the RX and TX lines from the ACC port to the Arduino to allow the board to also act as a CAT interface or to read/set options on the FT817 by the Arduino.
 

@@ -55,4 +55,4 @@ The documentation for the official interface cable states it draws 0.06 mA with 
 
 I suspect the official cable draws so little power that is powered via the TX output pin on the ACC connector. Unfortunately, that can’t be done with an Arduino. Still this build is 1/7th the cost of an official cable.
 
-It is possible to reduce the power consumption of the board a little bit more by removing the onoard power LED and increasing the sleep time in the code. 
+It is possible to reduce the power consumption of the board a little bit more by removing the onboard power LED and increasing the sleep time in the code. 

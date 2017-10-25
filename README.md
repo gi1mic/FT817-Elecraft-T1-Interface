@@ -29,9 +29,9 @@ I used an 5V Arduino Pro Micro since:
 * Some heat shrink
 
 # Assembly
-I just assembled the parts to the rear of the Arduino (See photos).
+I just assembled the parts to the rear of the Arduino and then covered in hot glue before covering with heat shrink .
 
-![alt text](https://github.com/gi1mic/FT817-Elecraft-T1-Interface/blob/master/Photos/IMG_8601.jpg "Rear of the board")
+![alt text](https://github.com/gi1mic/FT817-Elecraft-T1-Interface/blob/master/Photos/IMG_8601.jpg "Rear of the board prior to hot glue")
 
 |ACC Port | Arduino |
 | ------ | ------ |
@@ -51,7 +51,7 @@ I just assembled the parts to the rear of the Arduino (See photos).
 The final cable assembly was held in place to the board with hot glue before being wrapped in heat shrink. In hind sight I should have also wired up the RX and TX lines from the ACC port to the Arduino to allow the board to also act as a CAT interface or to read/set options on the FT817 by the Arduino.
 
 # Power Consumption
-The documentation for the official interface cable states it draws 0.06 mA with the rig off and 0.3 mA when the rig is on.  This circuit draws about 3mA but bursts to much higher than that every two seconds for a fraction of a second as it samples the BAND_DATA pin. 
+The documentation for the official interface cable states it draws 0.06 mA with the rig off and 0.3 mA when the rig is on.  This circuit draws about 3mA but bursts to much higher than that every two seconds for a fraction of a second as it samples the BAND_DATA pin. Most of the time the Arduino is in sleep mode.
 
 I suspect the official cable draws so little power that is powered via the TX output pin. Unfortunately, that can’t be down with an Arduino. Still this build is 1/7th the cost of an official cable.
 
